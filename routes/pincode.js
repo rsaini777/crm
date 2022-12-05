@@ -3,7 +3,7 @@ const router=express.Router()
 const PincodeCtrl=require("../controller/pincode")
 
 
-router.post('/pincode',PincodeCtrl.createStore)
+router.get('/pincode',PincodeCtrl.checkPin)
 
 
 module.exports=router

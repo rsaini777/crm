@@ -1,9 +1,8 @@
 const mongoose=require("mongoose")
 const Schema= new mongoose.Schema({
-    pincode:{
+    Pincode:{
         type:Number,
-        required:true,
     },
 },{timestamps:true})
 
-module.exports=mongoose.model("Pincode",Schema);
+module.exports=mongoose.model("Pincodedata",Schema);

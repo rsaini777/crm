@@ -27,6 +27,9 @@ app.use('/api',storeRoutes)
 const userRoutes=require("./routes/userinfo")
 app.use('/api',userRoutes)
 
+const pinRoutes=require("./routes/pincode")
+app.use('/api',pinRoutes)
+
 app.listen(port,()=>{
     console.log(`Server is running on port: ${port}`);
 })
